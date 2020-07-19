@@ -35,10 +35,10 @@ i am not so skilled in programming so this tool is very simple, this script is i
 meabed https://github.com/meabed/memcached-php-backup-restore , i wanted to wrote it in python
 but i need it quick, i also tried in bash but realized bash have no good support for streams
 and binary data, so i ended in php for now, anyway chances are if you have memcached installed
-you also have a website and php installed
+you also have a website with database and php installed
 
 this tool is very basic, it just dumps data compatible with 'set' format for easy later restore,
 the memcached 'set' command just stores the key, flags, expiration time, data length and
-the data itself; all other data like slabs or last access time are lost, i invite you to write
+the data itself; all other meta data like slabs or last access time are lost, i invite you to write
 a better and more portable tool :)
 
