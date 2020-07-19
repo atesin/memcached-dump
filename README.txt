@@ -29,7 +29,9 @@ is full of nice features)
 
 so i wanted to install memcached to speed up my sites and avoid php session blocking
 in my scripts. When i searched for 'memcached data persistency' or 'memcached backup restore'
-i was surprised by the lack of related support/tools but a couple scripts
+i was surprised by the lack of related support/tools but a couple scripts, later i
+discovered there is a tool 'memcached-tool' in the official centos package, that also supports
+data dump (in a different way)
 
 i am not so skilled in programming so this tool is very simple, this script is inspired in
 meabed https://github.com/meabed/memcached-php-backup-restore , i wanted to wrote it in python
@@ -39,6 +41,6 @@ you also have a website with database and php installed
 
 this tool is very basic, it just dumps data compatible with 'set' format for easy later restore,
 the memcached 'set' command just stores the key, flags, expiration time, data length and
-the data itself; all other meta data like slabs or last access time are lost, i invite you to write
-a better and more portable tool :)
+the data itself; all other meta data like slabs or last access time are lost, i invite you
+to write a better and more portable tool :)
 
